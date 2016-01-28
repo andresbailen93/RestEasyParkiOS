@@ -32,7 +32,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Parkzone.findBySeccion", query = "SELECT p FROM Parkzone p WHERE p.seccion = :seccion"),
     @NamedQuery(name = "Parkzone.findByNumero", query = "SELECT p FROM Parkzone p WHERE p.numero = :numero"),
     @NamedQuery(name = "Parkzone.findByOcupado", query = "SELECT p FROM Parkzone p WHERE p.ocupado = :ocupado"),
-    @NamedQuery(name = "Parkzone.findByIdPlaza", query = "SELECT p FROM Parkzone p WHERE p.idPlaza = :idPlaza")})
+    @NamedQuery(name = "Parkzone.findByIdPlaza", query = "SELECT p FROM Parkzone p WHERE p.idPlaza = :idPlaza"),
+    @NamedQuery(name = "Parkzone.findByIdUserFree", query = "SELECT p FROM Parkzone p WHERE p.idPlaza = :idPlaza")})
 public class Parkzone implements Serializable {
 
     private static final long serialVersionUID = 1L;
